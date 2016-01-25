@@ -14,6 +14,21 @@ module.exports = React.createClass({
                 </a>
             </div>
         );
+    },
+
+    componentDidLoad: function() {
+        var anchorScroll = require("anchor-scroll");
+        anchorScroll.init({
+            updateUrl: true,
+            offset: 0,
+            ease: 'inOutCirc',
+            duration: 500
+            selector: "a[href*='#+"this.props.name"+']"
+        });
+    },
+
+    componentWillUnload: function() {
+
     }
 
 });
