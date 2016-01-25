@@ -22,8 +22,8 @@ module.exports = React.createClass({
             updateUrl: true,
             offset: 0,
             ease: 'inOutCirc',
-            duration: 500
-            selector: "a[href*='#+"this.props.name"+']"
+            duration: 500,
+            selector: "a[href*='#+"+this.props.name+"+']"
         });
     },
 
