@@ -1,0 +1,30 @@
+{
+  "name": "react-scroll-nav",
+  "version": "1.0.0",
+  "description": "Simple React components to create a single page web app with scroll based navigation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kristian Lyngbaek <klyngbaek@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klyngbaek/react-scroll-nav.git"
+  },
+  "keywords": [
+    "react",
+    "scroll",
+    "nav",
+    "navigation",
+    "single",
+    "page",
+    "ui",
+    "gui",
+    "scrollable"
+  ],
+  "bugs": {
+    "url": "https://github.com/klyngbaek/react-scroll-nav/issues"
+  },
+  "homepage": "https://github.com/klyngbaek/react-scroll-nav#readme"
+}
