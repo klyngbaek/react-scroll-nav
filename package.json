@@ -26,5 +26,22 @@
   "bugs": {
     "url": "https://github.com/klyngbaek/react-scroll-nav/issues"
   },
-  "homepage": "https://github.com/klyngbaek/react-scroll-nav#readme"
+  "homepage": "https://github.com/klyngbaek/react-scroll-nav#readme",
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "react"
+          ]
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "anchor-scroll": "^1.1.1",
+    "react": "^0.14.6",
+    "scrollmonitor": "^1.0.12"
+  }
 }
