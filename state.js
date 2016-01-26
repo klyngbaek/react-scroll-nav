@@ -26,7 +26,7 @@ ScrollState.prototype.setSection = function(section) {
         var self = this;
         this.section = section;
         this.emit('section', section);
-        scrollToElement('#'+this.props.name, {
+        scrollToElement('#'+section, {
             offset: 0,
             ease: 'inOutCirc',
             duration: DURATION
