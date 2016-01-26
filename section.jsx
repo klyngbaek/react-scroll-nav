@@ -5,9 +5,7 @@ var scrollState = require('./state.js');
 module.exports = React.createClass({
 
     propTypes: {
-        name: React.PropTypes.string.isRequired,
-        onSelect: React.PropTypes.func,
-        onUnselect: React.PropTypes.func
+        name: React.PropTypes.string.isRequired
     },
 
     render: function() {
@@ -23,9 +21,7 @@ module.exports = React.createClass({
         var section = this.refs.section;
         this.elementWatcher = scrollMonitor.create(section);
         this.elementWatcher.enterViewport(function() {
-            scrollState.setSection(section.id);
-        });
-        this.elementWatcher.exitViewport(function() {
+            scrollState.detectSection(section.id);
         });
     },
 
