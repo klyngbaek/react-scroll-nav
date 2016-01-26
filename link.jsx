@@ -1,4 +1,6 @@
 var React = require('react');
+var scrollState = require('./state.js');
+var scrollToElement = require('scroll-to-element');
 
 module.exports = React.createClass({
 
@@ -9,26 +11,26 @@ module.exports = React.createClass({
     render: function() {
         return (
             <div>
-                <a href={'#'+this.props.name}>
+                <a onClick={this.handleClick} href={'#'+this.props.name}>
                     {this.props.children}
                 </a>
             </div>
         );
     },
 
-    componentDidLoad: function() {
-        var anchorScroll = require("anchor-scroll");
-        anchorScroll.init({
-            updateUrl: true,
+    handleClick: function(event) {
+        event.preventDefault();
+        // with options
+        scrollToElement('#'+this.props.name, {
             offset: 0,
             ease: 'inOutCirc',
-            duration: 500,
-            selector: "a[href*='#+"+this.props.name+"+']"
+            duration: 500
         });
-    },
-
-    componentWillUnload: function() {
-
+        scrollState.setSection(this.props.name);
+        scrollState.pause();
+        setTimeout(function() {
+            scrollState.continue();
+        }, 1500);
     }
 
 });

@@ -40,8 +40,8 @@
     ]
   },
   "dependencies": {
-    "anchor-scroll": "^1.1.1",
     "react": "^0.14.6",
+    "scroll-to-element": "^1.1.0",
     "scrollmonitor": "^1.0.12"
   }
 }
