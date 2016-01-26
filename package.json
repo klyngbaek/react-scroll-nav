@@ -1,6 +1,6 @@
 {
   "name": "react-scroll-nav",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Simple React components to create a single page web app with scroll based navigation",
   "main": "index.js",
   "scripts": {
@@ -43,5 +43,9 @@
     "react": "^0.14.6",
     "scroll-to-element": "^1.1.0",
     "scrollmonitor": "^1.0.12"
+  },
+  "devDependencies": {
+    "babel-preset-react": "^6.3.13",
+    "babelify": "^7.2.0"
   }
 }

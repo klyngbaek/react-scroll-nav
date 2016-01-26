@@ -20,7 +20,7 @@ module.exports = React.createClass({
     componentDidMount: function() {
         var section = this.refs.section;
         this.elementWatcher = scrollMonitor.create(section);
-        this.elementWatcher.enterViewport(function() {
+        this.elementWatcher.fullyEnterViewport(function() {
             scrollState.detectSection(section.id);
         });
     },

@@ -36,7 +36,7 @@ ScrollState.prototype.setSection = function(section) {
         this._processingTimeoutId = setTimeout(function() {
             self._processing = false;
             this._processingTimeoutId = null;
-        }, DURATION);
+        }, DURATION+100);
 
 };
 
