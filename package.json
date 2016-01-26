@@ -1,6 +1,6 @@
 {
   "name": "react-scroll-nav",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Simple React components to create a single page web app with scroll based navigation",
   "main": "index.js",
   "scripts": {
@@ -14,14 +14,16 @@
   },
   "keywords": [
     "react",
-    "scroll",
+    "react-component",
     "nav",
     "navigation",
-    "single",
     "page",
     "ui",
-    "gui",
-    "scrollable"
+    "scroll",
+    "scrolls",
+    "scrollable",
+    "scroller",
+    "scrolling"
   ],
   "bugs": {
     "url": "https://github.com/klyngbaek/react-scroll-nav/issues"
