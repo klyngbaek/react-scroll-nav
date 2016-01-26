@@ -19,6 +19,7 @@ module.exports = React.createClass({
 
     handleClick: function(event) {
         event.preventDefault();
+        scrollState.setSection(this.props.name);
     }
 
 });
