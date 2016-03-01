@@ -9,11 +9,9 @@ module.exports = React.createClass({
 
     render: function() {
         return (
-            <div>
-                <a onClick={this.handleClick} href={'#'+this.props.name}>
-                    {this.props.children}
-                </a>
-            </div>
+            <a id={this.props.id} onClick={this.handleClick} href={'#'+this.props.name}>
+                {this.props.children}
+            </a>
         );
     },
 
