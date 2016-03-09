@@ -11,7 +11,7 @@ module.exports = React.createClass({
     render: function() {
         return (
             <div id={this.props.id}>
-                <a ref="section" id={this.props.name} name={this.props.name}></a>
+                <a ref="section" id={this.props.id+'.anchor'} name={this.props.name}></a>
                 {this.props.children}
             </div>
         );
